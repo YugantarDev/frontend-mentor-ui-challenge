@@ -123,6 +123,8 @@ ul.inner-list {
     font-size: 11px;
     font-family: 'Ubuntu-Regular';
     margin-right: 30px;
+    border: 1px solid #c3e6ff;
+    color: #c3e6ff;
 }
 
 .serial1 {
