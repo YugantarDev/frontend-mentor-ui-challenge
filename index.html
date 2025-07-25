@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Multi-step form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        >
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Frontend Mentor | Multi-step form</title>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Sidebar start -->
-
-  Step 1
-  Your info
-
-  Step 2
-  Select plan
-
-  Step 3
-  Add-ons
-
-  Step 4
-  Summary
-
-  <!-- Sidebar end -->
-
-  <!-- Step 1 start -->
-
-  Personal info
-  Please provide your name, email address, and phone number.
-
-  Name
-  e.g. Stephen King
-
-  Email Address
-  e.g. stephenking@lorem.com
-
-  Phone Number
-  e.g. +1 234 567 890
-
-  Next Step
-
-  <!-- Step 1 end -->
-
-  <!-- Step 2 start -->
-
-  Select your plan
-  You have the option of monthly or yearly billing.
+        </style>
+    </head>
+    <body>
+        <!-- Sidebar start -->
+        <div class="container">
+            <div class="step1-container">
+                <div class="sidebar">
+                    <ul class="steps-list">
+                        <li>
+                            <ul class="inner-list">
+                                <li class="numbers" style=" background-color: #c3e6ff;">1</li>
+                                <li>
+                                    <div class="serial1">STEP 1</div>
+                                    <div class="serial2">YOUR INFO</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="inner-list">
+                                <li class="numbers">2</li>
+                                <li>
+                                    <div class="serial1">STEP 2</div>
+                                    <div class="serial2">SELECT PLAN</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="inner-list">
+                                <li class="numbers">3</li>
+                                <li>
+                                    <div class="serial1">STEP 3</div>
+                                    <div class="serial2">ADD-ONS</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="inner-list">
+                                <li class="numbers">4</li>
+                                <li>
+                                    <div class="serial1">STEP 4</div>
+                                    <div class="serial2">SUMMARY</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Sidebar end  -->
+                </div>
+                <div class="content">
+                    <h1>Personal info</h1>
+                    <div class="subtext">Please provide your name, email address, and phone number.</div>
+                    <div class="form-container">
+                        <form action="" method="post">
+                            <label for="name">Name</label>
+                            <br>
+                            <input
+                                type="text"
+                                placeholder="e.g. Stephen King "
+                                name="username"
+                                id="name"
+                                autocomplete="name"
+                            >
+                            <br>
+                            <br>
+                            <label for="email">Email Address</label>
+                            <br>
+                            <input
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="e.g. stephenking@lorem.com"
+                            >
+                            <br>
+                            <br>
+                            <label for="phone">Phone Number</label>
+                            <br>
+                            <input
+                                type="number"
+                                name="phone"
+                                id="phone"
+                                placeholder="e.g. +1 234 567 890"
+                            >
+                            <br>
+                            <br>
+                            <button type="submit">Next Step</button>
+                        </form>
+                    </div>
+                    <!-- Step 1 end -->
+                </div>
+                <div class="step2-container">
+                    <!-- Step 2 start -->
+                    Select your plan
+                          You have the option of monthly or yearly billing.
 
   Arcade
   $9/mo
@@ -69,12 +123,9 @@
 
   Go Back
   Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons
+                    <!-- Step 2 end -->
+                    <!-- Step 3 start -->
+                    Pick add-ons
   Add-ons help enhance your gaming experience.
 
   Online service
@@ -91,36 +142,32 @@
 
   Go Back
   Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
+                    <!-- Step 3 end -->
+                    <!-- Step 4 start -->
+                    Finishing up
   Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
+                    <!-- Dynamically add subscription and add-on selections here -->
+                    Total (per month/year)
 
   Go Back
   Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you!
+                    <!-- Step 4 end -->
+                    <!-- Step 5 start -->
+                    Thank you!
 
   Thanks for confirming your subscription! We hope you have fun 
   using our platform. If you ever need support, please feel free 
   to email us at support@loremgaming.com.
-
-  <!-- Step 5 end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+                    <!-- Step 5 end -->
+                    <div class="attribution">
+                        Challenge by
+                        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+                        . 
+    Coded by
+                        <a href="#">Your Name Here</a>
+                        .
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
